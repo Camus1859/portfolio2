@@ -1,7 +1,11 @@
 import React from "react"
+import mt from "../images/svg/FlatMountains.svg"
 
-export default () => (
-  <div>
-    <button className="py-4 px-4 bg-blue-600">Button</button>
-  </div>
-)
+export default () => {
+  return (
+    <div >
+      <img className="h-screen w-screen object-cover" alt="mountain" src={mt}/>
+     
+    </div>
+  )
+}
