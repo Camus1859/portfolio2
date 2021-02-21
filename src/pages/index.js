@@ -1,8 +1,6 @@
 import React from "react"
-import "../images/svg/FlatMountains.svg"
 import Layout from "../components/layout"
-import { Link } from 'gatsby'
-
+import { Link } from "gatsby"
 
 const AboutPage = () => {
   return (
@@ -14,13 +12,13 @@ const AboutPage = () => {
               <h1 className="text-gray-100 text-5xl font-light mb-2  	">
                 Anderson Laventure
               </h1>
-                <h1 className="text-gray-100 text-2xl font-medium mb-2 inline-block ">
-                  Front End developer
-                </h1>
+              <h1 className="text-gray-100 text-2xl font-medium mb-2 inline-block ">
+                Front End developer
+              </h1>
             </div>
 
             <div className=" inline-block mb-2  w-2/5  ">
-            <div className="border-b-2 border-pink-light  mb-2"></div>
+              <div className="border-b-2 border-pink-light  mb-2"></div>
 
               <p className="text-gray-100 mb-2	text-lg		">
                 I am a former public school teacher turned self taught web
@@ -30,7 +28,6 @@ const AboutPage = () => {
                 works under the hood, and finding the last bug in my
                 applications.
               </p>
-
             </div>
             <div className=" mb-2">
               <p className="text-gray-100 w-2/5 text-lg	">
@@ -41,8 +38,10 @@ const AboutPage = () => {
               </p>
             </div>
             <div>
-              <Link to="/projectspg" >
-              <button className="bg-pink-light font-medium	p-4 text-gray-100 focus:outline-none		">SEE MY WORK</button>
+              <Link to="/projectspg">
+                <button className="bg-pink-light font-medium	p-4 text-gray-100 focus:outline-none		">
+                  SEE MY WORK
+                </button>
               </Link>
             </div>
           </div>

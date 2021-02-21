@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
 
-      backgroundImage: theme => ({
-        mt: "url('../images/svg/FlatMountains.svg')",
-      }),
+      // backgroundImage: theme => ({
+      //   mt: "url('../images/svg/FlatMountains.svg')",
+      // }),
       colors: {
         "brown-light": "#97613",
         "brown-dark": "#603e26",
