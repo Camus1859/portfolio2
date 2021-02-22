@@ -5,7 +5,8 @@ const Header = () => {
  
 
   return (
-    <header>
+    <header
+    className="pt-6  w-full fixed ">
       <nav>
         <ul className="flex flex-row justify-evenly">
           <li>
@@ -32,7 +33,7 @@ const Header = () => {
               Projects
             </Link>
           </li>
-          <li className="text-gray-100 text-2xl font-light bg-pink-light font-medium	p-4	uppercase shadow-2xl	">
+          <li className="text-gray-100 text-2xl font-light bg-pink-light font-medium	p-4	uppercase shadow-2xl transform hover:-translate-y-1 hover:scale-110 	">
             <Link to="/contactpg">Contact Me</Link>
           </li>
         </ul>

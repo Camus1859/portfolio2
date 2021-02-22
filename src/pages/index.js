@@ -39,7 +39,7 @@ const AboutPage = () => {
             </div>
             <div>
               <Link to="/projectspg">
-                <button className="bg-pink-light font-medium	p-4 text-gray-100 focus:outline-none		">
+                <button className="bg-pink-light font-medium	p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-110 		">
                   SEE MY WORK
                 </button>
               </Link>
