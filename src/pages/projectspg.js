@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const checkImageAddDescription = imageName => {
+  
   if (imageName.includes("calendar")) {
     const description =
       "I created my own algorithim for calendars functionality. User can add, delete, and edit an event. View all events of current month."
@@ -29,6 +30,42 @@ const checkImageAddDescription = imageName => {
   }
 }
 
+const viewSiteBtnClicked = imageName => {
+  if (imageName.includes("calendar")) {
+    return window.open("http://camus1859.github.io/calendar/", "_blank")
+  }
+
+  if (imageName.includes("library")) {
+    return window.open("http://camus1859.github.io/library/", "_blank")
+  }
+
+  if (imageName.includes("tic")) {
+    return window.open("http://camus1859.github.io/tic-tac-toe/", "_blank")
+  }
+
+  if (imageName.includes("todo")) {
+    return window.open("http://camus1859.github.io/todo/", "_blank")
+  }
+}
+
+const viewCodeBtnClicked = imageName => {
+  if (imageName.includes("calendar")) {
+    return window.open("https://github.com/Camus1859/calendar")
+  }
+
+  if (imageName.includes("library")) {
+    return window.open("https://github.com/Camus1859/library")
+  }
+
+  if (imageName.includes("tic")) {
+    return window.open("https://github.com/Camus1859/tic-tac-toe")
+  }
+
+  if (imageName.includes("todo")) {
+    return window.open("https://github.com/Camus1859/todo")
+  }
+}
+
 const ProjectsPage = ({ data }) => {
   const images = data.projectImages.edges.map(image => {
     return (
@@ -45,12 +82,18 @@ const ProjectsPage = ({ data }) => {
         <p className="h-3/5	 w-2/5 bg-gray-50 text-gray-900	 ">
           {checkImageAddDescription(image.node.base)}
         </p>
-        <div className="flex justify-around">
-          <button className="bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none	outline-none	shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-110 m-4 hover:bg-blue-600	">
-            VIEW CODE
-          </button>
-          <button className=" m-4	bg-brown-dark p-4 font-bold border-none no-underline	outline-none		rounded-2xl focus:outline-none shadow-2xl transform hover:-translate-y-1 hover:scale-110 hover:bg-yellow-500">
+        <div className="flex justify-around h-3/5	 w-2/5 bg-gray-50 ">
+          <button
+            className="bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none	outline-none	shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-110 m-4 hover:bg-blue-500 "
+            onClick={() => viewSiteBtnClicked(image.node.base)}
+          >
             VIEW PROJECT
+          </button>
+          <button
+            className=" m-4	bg-purple-900 p-4 font-bold border-none no-underline	outline-none		rounded-2xl focus:outline-none shadow-2xl transform hover:-translate-y-1 hover:scale-110 hover:bg-purple-500"
+            onClick={() => viewCodeBtnClicked(image.node.base)}
+          >
+            VIEW CODE
           </button>
         </div>
       </div>
