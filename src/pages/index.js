@@ -5,22 +5,22 @@ import { Link } from "gatsby"
 const AboutPage = () => {
   return (
     <Layout>
-      <div className="ml-72 pl-3  mr-20	">
-        <div className="mt-40">
-          <div className=" ">
-            <div className="">
-              <h1 className="text-gray-100 text-5xl font-light mb-2  	">
+      <div className="  lg:ml-72 lg:pl-3  lg:mr-20	">
+        <div className="  lg:mt-40">
+          <div className=" p-4	">
+            <div>
+              <h1 className="text-gray-100 lg:text-5xl text-2xl lg:font-light mb-2  	">
                 Anderson Laventure
               </h1>
-              <h1 className="text-gray-100 text-2xl font-medium mb-2 inline-block ">
+              <h1 className="text-gray-100 text-2xl lg:font-medium mb-2 inline-block ">
                 Front End developer
               </h1>
             </div>
 
-            <div className=" inline-block mb-2  w-2/5  ">
+            <div className=" inline-block mb-2  lg:w-2/5  ">
               <div className="border-b-2 border-pink-light  mb-2"></div>
 
-              <p className="text-gray-100 mb-2	text-lg		">
+              <p className=" text-gray-100 mb-2	text-lg		">
                 I am a former public school teacher turned self taught web
                 developer. I love coding (becoming addicted actually) because I
                 get to solve problems and build things after envisioning them. I
@@ -30,7 +30,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className=" mb-2">
-              <p className="text-gray-100 w-2/5 text-lg	">
+              <p className="text-gray-100 lg:w-2/5 text-lg	">
                 When im not programming, Im ususally reading or listening to a
                 podcast. I enjoy taking my dogs out on long walks while
                 listening to science, philosophy, political and of course

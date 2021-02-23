@@ -22,9 +22,9 @@ const ContactPage = ({ data }) => {
   const images = data.contactImages.edges.map(image => {
     console.log(image.node.base)
     return (
-      <a href={determineIconClicked(image.node.base)} target="_blank">
+      <a key={image.node.base} href={determineIconClicked(image.node.base)} target="_blank">
         <Img
-          className="h-28 w-28 bg-gray-200 rounded-full transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl"
+          className="  h-28 w-28 bg-gray-200 rounded-full transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl"
           fluid={image.node.childImageSharp.fluid}
         />
       </a>
@@ -33,7 +33,7 @@ const ContactPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="h-3/6 flex items-center justify-evenly w-full  ">
+      <div className=" mt-36 relative h-4/6 flex-col flex items-center lg:flex   lg:justify-evenly w-full  ">
         {images}
       </div>
     </Layout>
