@@ -13,7 +13,7 @@ const Header = () => {
 
      
 
-      <header className=" hidden  lg:pt-6  lg:w-full lg:fixed ">
+      <header className=" hidden md:block md:pt-6  md:w-full md:fixed ">
         <nav>
           <ul className="flex flex-row justify-evenly">
             <li>

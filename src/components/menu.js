@@ -15,7 +15,7 @@ const MyComponent = () => {
   }
 
   return (
-    <div>
+    <div className="md:hidden">
       <button
         className="focus:outline-none no-underline outline-none	"
         onClick={() => setIsOpen(!isOpen)}

@@ -71,19 +71,19 @@ const ProjectsPage = ({ data }) => {
   const images = data.projectImages.edges.map(image => {
     return (
       <div key={image.node.base} className=" flex-col flex items-center mt-14  text-gray-100 text-center">
-        <p className=" h-5/5	 w-4/5 bg-gray-50 text-gray-900">
+        <p className=" h-5/5	 w-4/5 bg-gray-50 text-gray-900  md:h-4/5	 md:w-3/5">
           {" "}
           {image.node.base.split(".")[0].toUpperCase()}
         </p>
 
         <Img
-          className="h-5/5 	 w-4/5 "
+          className="h-5/5 	 w-4/5 md:h-4/5	 md:w-3/5"
           fluid={image.node.childImageSharp.fluid}
         />
-        <p className="h-5/5	 w-4/5 bg-gray-50 text-gray-900	 ">
+        <p className="h-5/5	 w-4/5 bg-gray-50 text-gray-900  md:h-4/5	 md:w-3/5	 ">
           {checkImageAddDescription(image.node.base)}
         </p>
-        <div className="flex justify-around h-5/5	 w-4/5 bg-gray-50 ">
+        <div className="flex justify-around h-5/5	 w-4/5 bg-gray-50 md:h-4/5	 md:w-3/5 ">
           <button
             className="bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none	outline-none	shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-110 m-4 hover:bg-blue-500 "
             onClick={() => viewSiteBtnClicked(image.node.base)}
@@ -102,7 +102,7 @@ const ProjectsPage = ({ data }) => {
   })
   return (
     <Layout>
-      <div className="images">{images}</div>
+      <div className="images md:mt-32">{images}</div>
     </Layout>
   )
 }
