@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 const AboutPage = () => {
   return (
     <Layout>
-      <div className="  lg:ml-72 lg:pl-3  lg:mr-20	">
-        <div className="  lg:mt-40">
+      <div className="   lg:pl-3  	">
+        <div className="  mt-12 md:mt-28 lg:ml-44">
           <div className=" p-4	">
             <div>
               <h1 className="text-gray-100 lg:text-5xl text-2xl lg:font-light mb-2  	">
