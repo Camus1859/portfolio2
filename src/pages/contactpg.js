@@ -20,7 +20,6 @@ const determineIconClicked = imageName => {
 
 const ContactPage = ({ data }) => {
   const images = data.contactImages.edges.map(image => {
-    console.log(image.node.base)
     return (
       <a key={image.node.base} href={determineIconClicked(image.node.base)} target="_blank">
         <Img

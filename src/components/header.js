@@ -1,17 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import MyComponent from '../components/menu'
-
-
+import MyComponent from "../components/menu"
 
 const Header = () => {
   return (
     <div>
-
       <MyComponent />
-
-
-     
 
       <header className=" hidden md:block md:pt-6  md:w-full md:fixed ">
         <nav>

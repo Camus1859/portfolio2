@@ -55,7 +55,7 @@ import Img from "gatsby-image"
 const SkillsPage = ({ data }) => {
   const images = data.skillsImages.edges.map(image => (
     <Img
-      className="rounded-full h-24 w-20 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl "
+      className="rounded-full h-28 w-28 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl "
       fluid={image.node.childImageSharp.fluid}
     />
   ))
