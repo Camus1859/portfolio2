@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@headlessui/react": "^0.3.1",
+    "babel-preset-gatsby": "^0.12.2",
     "gatsby": "^2.32.3",
     "gatsby-cli": "^2.19.1",
     "gatsby-image": "^2.11.0",
@@ -27,18 +28,25 @@
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.12.13",
     "autoprefixer": "^10.2.4",
     "gatsby-plugin-remote-images": "^2.2.0",
     "gh-pages": "^3.1.0",
     "postcss": "^8.2.6",
     "prettier": "2.2.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
   "scripts": {
+    "deploy:github": "npm run build && node ./scripts/deploy-github",
     "build": "react-scripts build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -53,5 +61,17 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
