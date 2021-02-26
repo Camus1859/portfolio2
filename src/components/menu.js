@@ -2,7 +2,8 @@ import { Transition } from "@headlessui/react"
 import { useState, useRef } from "react"
 import React from "react"
 import kebab from "../images/iconImages/kebab.png"
-import { Link } from "gatsby"
+import Link from "gatsby-link"
+
 
 const MyComponent = () => {
   const [isOpen, setIsOpen] = useState(false)
