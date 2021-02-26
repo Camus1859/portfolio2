@@ -40,28 +40,24 @@ const MyComponent = () => {
           <Link
             to="/"
             className=" block text-gray-100 py-1 rounded"
-            role="About"
           >
             About
           </Link>
           <Link
             to="/skillpg"
             className=" block text-gray-100 py-1 rounded"
-            role="Skills"
           >
             Skills
           </Link>
           <Link
             to="/projectspg"
             className=" block text-gray-100 py-1 rounded"
-            role="Projects"
           >
             Projects
           </Link>
           <Link
             to="/contactpg"
             className=" block text-gray-100 py-1 rounded"
-            role="Contact Me"
             name="contact"
           >
             Contact Me
