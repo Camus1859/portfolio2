@@ -4,10 +4,10 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const checkImageAddDescription = imageName => {
-  
   if (imageName.includes("calendar")) {
     const description =
-      "I created my own algorithim for calendars functionality. User can add, delete, and edit an event. View all events of current month."
+      "I created my own algorithim for calendars functionality. A full stack calendar with all the CRUD operations. I also incorporate using a third party API to get National US holidays."
+
     return description
   }
 
@@ -32,7 +32,10 @@ const checkImageAddDescription = imageName => {
 
 const viewSiteBtnClicked = imageName => {
   if (imageName.includes("calendar")) {
-    return window.open("http://camus1859.github.io/calendar/", "_blank")
+    return window.open(
+      "https://laventure-calendar-app.herokuapp.com/",
+      "_blank"
+    )
   }
 
   if (imageName.includes("library")) {
@@ -68,8 +71,12 @@ const viewCodeBtnClicked = imageName => {
 
 const ProjectsPage = ({ data }) => {
   const images = data.projectImages.edges.map(image => {
+    console.log(image.node.childImageSharp.fluid)
     return (
-      <div key={image.node.base} className=" flex-col flex items-center mt-14  text-gray-100 text-center">
+      <div
+        key={image.node.base}
+        className=" flex-col flex items-center mt-14  text-gray-100 text-center"
+      >
         <p className=" h-5/5	 w-4/5 bg-gray-50 text-gray-900 lg:h-4/5 lg:w-3/5 md:h-5/5	 md:w-4/5 relative">
           {" "}
           {image.node.base.split(".")[0].toUpperCase()}

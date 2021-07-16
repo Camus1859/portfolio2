@@ -13,7 +13,7 @@ const AboutPage = () => {
                 Anderson Laventure
               </h1>
               <h1 className="text-gray-50 text-2xl lg:font-medium mb-2 inline-block ">
-                Front End developer
+                Full Stack Developer 
               </h1>
             </div>
 
@@ -21,12 +21,12 @@ const AboutPage = () => {
               <div className="border-b-2 border-pink-light  mb-2"></div>
 
               <p className=" text-gray-100 mb-2	text-lg		">
-                I'm a former public school teacher turned self taught web
-                developer. I love coding (becoming addicted actually) because I
-                get to solve problems and build things after envisioning them. I
-                enjoy using the OOP paradigm, learning about how javascript
-                works under the hood, and finding the last bug in my
-                applications.
+                I am a former science and math middle school teacher turned self
+                taught full-stack developer during the pandemic. I love coding because I get to
+                solve problems and build things after envisioning them. I love
+                tinkering with new technology and exploring all unknown parts of
+                anything related to programming. Im a technologist at heart with
+                a passion for learning and solving problems.
               </p>
             </div>
             <div className=" mb-2">

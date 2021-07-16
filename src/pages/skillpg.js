@@ -44,9 +44,6 @@
 //   }
 // `
 
-
-
-
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
@@ -62,7 +59,9 @@ const SkillsPage = ({ data }) => {
   return (
     <Layout>
       <div className="h-2/6 flex items-center ">
-        <div className=" mt-52 h-44 w-44 flex justify-evenly w-full  flex-wrap  	">{images}</div>
+        <div className=" mt-52 h-36 w-36 flex justify-evenly w-full  flex-wrap  	">
+          {images}
+        </div>
       </div>
     </Layout>
   )
