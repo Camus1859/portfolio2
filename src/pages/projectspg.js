@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const checkImageAddDescription = imageName => {
   if (imageName.includes("calendar")) {
     const description =
-      "I created my own algorithim for calendars functionality. A full stack calendar with all the CRUD operations. I also incorporate using a third party API to get National US holidays."
+      "Full Stack calendar with all the CRUD operations. I also incorporate using a third party API to get National US holidays. I created my own algorithim for calendars functionality. "
 
     return description
   }
@@ -25,7 +25,7 @@ const checkImageAddDescription = imageName => {
 
   if (imageName.includes("todo")) {
     const description =
-      "Create todo, place them into different list, edit, and delete. Create new task from popup. Mark task as finished. View all todo's in a given time-frame."
+      "Full Stack Todo app with all the CRUD operations."
     return description
   }
 }
@@ -47,7 +47,7 @@ const viewSiteBtnClicked = imageName => {
   }
 
   if (imageName.includes("todo")) {
-    return window.open("http://camus1859.github.io/todo/", "_blank")
+    return window.open("https://todo-app-laventure.herokuapp.com/", "_blank")
   }
 }
 
