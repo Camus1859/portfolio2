@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["P4"],"mappings":"2FAAA,gCAQeA,UANH,WACV,OACG","file":"component---src-pages-404-js-6f80989a751e2eeaf36d.js","sourcesContent":["import React from 'react'\n\nconst P4  = () => {\n  return (\n     <div>Error Detected</div>\n  )\n}\n\nexport default P4\n\n"],"sourceRoot":""}

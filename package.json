@@ -50,8 +50,8 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "deploy:github": "npm run build && node ./scripts/deploy-github",
-    "build": "react-scripts build",
+    "deploy:github": "gatsby build --prefix-paths && node ./scripts/deploygithub.js",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

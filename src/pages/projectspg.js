@@ -33,7 +33,7 @@ const checkImageAddDescription = imageName => {
 const viewSiteBtnClicked = imageName => {
   if (imageName.includes("calendar")) {
     return window.open(
-      "https://laventure-calendar-app.herokuapp.com/",
+      "https://calendar-mntm.onrender.com",
       "_blank"
     )
   }
@@ -47,7 +47,7 @@ const viewSiteBtnClicked = imageName => {
   }
 
   if (imageName.includes("todo")) {
-    return window.open("https://todo-app-laventure.herokuapp.com/", "_blank")
+    return window.open("https://todo-u63g.onrender.com", "_blank")
   }
 }
 

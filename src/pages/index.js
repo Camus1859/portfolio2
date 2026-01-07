@@ -21,20 +21,18 @@ const AboutPage = () => {
               <div className="border-b-2 border-pink-light  mb-2"></div>
 
               <p className=" text-gray-100 mb-2	text-lg		">
-                I am a former science and math middle school teacher turned self
-                taught full-stack developer during the pandemic. I love coding because I get to
-                solve problems and build things after envisioning them. I love
-                tinkering with new technology and exploring all unknown parts of
-                anything related to programming. Im a technologist at heart with
-                a passion for learning and solving problems.
+                Full Stack Developer with 4+ years of experience building scalable
+                web and mobile applications. Former middle school science and math
+                teacher who brings unique problem-solving skills to software development.
+                Experience building React Native mobile apps, Next.js web applications,
+                and full-stack features with TypeScript, Node.js, and GraphQL.
               </p>
             </div>
             <div className=" mb-2">
               <p className="text-gray-100 lg:w-2/5 text-lg	">
-                When im not programming, Im ususally reading or listening to a
-                podcast. I enjoy taking my dogs out on long walks while
-                listening to science, philosophy, political and of course
-                programming podcasts.
+                Experience working at early stage startups in fintech and edtech,
+                building products with React, Vue.js, PostgreSQL, MongoDB, and AWS.
+                Passionate about clean code and creating user-focused experiences.
               </p>
             </div>
             <div>

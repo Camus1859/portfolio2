@@ -2,8 +2,7 @@ import { Transition } from "@headlessui/react"
 import { useState, useRef } from "react"
 import React from "react"
 import kebab from "../images/iconImages/kebab.png"
-import Link from "gatsby-link"
-
+import { Link } from "gatsby"
 
 const MyComponent = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -58,7 +57,6 @@ const MyComponent = () => {
           <Link
             to="/contactpg"
             className=" block text-gray-100 py-1 rounded"
-            name="contact"
           >
             Contact Me
           </Link>

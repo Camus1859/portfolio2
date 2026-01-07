@@ -4,8 +4,8 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
-    branch: 'source',
-    repo: 'https://github.com/Camus1859/portfolio2.github.io.git',
+    branch: 'gh-pages',
+    repo: 'https://github.com/Camus1859/portfolio2.git',
   },
   () => {
     console.log('Deploy Complete!')

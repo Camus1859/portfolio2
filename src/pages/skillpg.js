@@ -1,66 +1,34 @@
-// import React from "react"
-// import Layout from "../components/layout"
-// import { graphql } from "gatsby"
-// import Img from "gatsby-image"
-
-// const SkillsPage = ({ data }) => {
-//   const images = data.skillsImages.edges.map(image => (
-//     <Img
-//       className="rounded-full h-44 w-40 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl "
-//       fluid={image.node.childImageSharp.fluid}
-//     />
-//   ))
-//   return (
-//     <Layout>
-//       <div className="h-3/6 flex items-center">
-//         <div className="h-44 w-44 flex justify-evenly w-full  flex-wrap animate-bounce 	">{images}</div>
-//       </div>
-//     </Layout>
-//   )
-// }
-
-// export default SkillsPage
-
-// export const pageQuery = graphql`
-//   query {
-//     skillsImages: allFile(
-//       filter: {
-//         extension: { regex: "/(png)/" }
-//         relativeDirectory: { eq: "skillsImages" }
-//       }
-//     ) {
-//       edges {
-//         node {
-//           id
-//           base
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
-const SkillsPage = ({ data }) => {
-  const images = data.skillsImages.edges.map(image => (
-    <Img
-      className="rounded-full h-28 w-28 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 shadow-2xl "
-      fluid={image.node.childImageSharp.fluid}
-    />
-  ))
+const skills = [
+  { category: "Frontend", items: ["React", "React Native", "Next.js", "Vue.js", "TypeScript"] },
+  { category: "Backend", items: ["Node.js", "GraphQL"] },
+  { category: "Databases", items: ["PostgreSQL", "MongoDB"] },
+  { category: "Cloud", items: ["AWS"] },
+]
+
+const SkillsPage = () => {
   return (
     <Layout>
-      <div className="h-2/6 flex items-center ">
-        <div className=" mt-52 h-36 w-36 flex justify-evenly w-full  flex-wrap  	">
-          {images}
+      <div className="mt-24 md:mt-32 px-4 md:px-12 lg:px-44">
+        <h1 className="text-gray-200 text-3xl lg:text-4xl font-light mb-8">Skills</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {skills.map(skill => (
+            <div key={skill.category} className="mb-6">
+              <h2 className="text-pink-light text-xl font-medium mb-4">{skill.category}</h2>
+              <div className="flex flex-wrap gap-3">
+                {skill.items.map(item => (
+                  <span
+                    key={item}
+                    className="bg-gray-700 text-gray-100 px-4 py-2 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </Layout>
@@ -68,26 +36,3 @@ const SkillsPage = ({ data }) => {
 }
 
 export default SkillsPage
-
-export const pageQuery = graphql`
-  query {
-    skillsImages: allFile(
-      filter: {
-        extension: { regex: "/(png)/" }
-        relativeDirectory: { eq: "skillsImages" }
-      }
-    ) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
