@@ -12,7 +12,7 @@ const Header = () => {
           <ul className="flex flex-row justify-evenly">
             <li>
               <Link
-                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl  "
+                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl transition-all duration-300"
                 to="/"
               >
                 About
@@ -20,7 +20,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl  "
+                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl transition-all duration-300"
                 to="/skillpg"
               >
                 Skills
@@ -28,13 +28,13 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl  "
+                className="border-b-2 border-transparent hover:border-pink-light text-gray-100 text-2xl transition-all duration-300"
                 to="/projectspg"
               >
                 Projects
               </Link>
             </li>
-            <li className="text-gray-100 text-2xl font-light bg-pink-light font-medium	p-4	uppercase shadow-2xl transform hover:-translate-y-1 hover:scale-110 	">
+            <li className="text-gray-100 text-2xl font-light bg-pink-light font-medium p-4 uppercase shadow-2xl transform hover:-translate-y-1 hover:scale-105 rounded-lg transition-all duration-300">
               <Link to="/contactpg">Contact Me</Link>
             </li>
           </ul>

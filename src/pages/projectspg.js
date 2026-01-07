@@ -4,29 +4,24 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const checkImageAddDescription = imageName => {
+  if (imageName.includes("live-music")) {
+    return "Full-stack application integrating three external APIs (Spotify, Ticketmaster, Twilio) to deliver real-time artist data, concert listings, and SMS notifications."
+  }
+
   if (imageName.includes("calendar")) {
-    const description =
-      "Full Stack calendar with all the CRUD operations. I also incorporate using a third party API to get National US holidays. I created my own algorithim for calendars functionality. "
-
-    return description
-  }
-
-  if (imageName.includes("library")) {
-    const description =
-      "User can add, delete, and toggle if book is read. Books saved to local storage."
-    return description
-  }
-
-  if (imageName.includes("tic")) {
-    const description =
-      "Two player game. Keeps track of the winner. Able to restart game from any point Adding AI."
-    return description
+    return "Full-stack calendar featuring a custom date-calculation algorithm built from scratch, MongoDB persistence, and third-party API integration for US national holidays."
   }
 
   if (imageName.includes("todo")) {
-    const description =
-      "Full Stack Todo app with all the CRUD operations."
-    return description
+    return "Full-stack task management app with PostgreSQL database, CRUD operations, category filtering, priority levels, and persistent data storage."
+  }
+
+  if (imageName.includes("library")) {
+    return "Book tracking application with ES6 class-based architecture, local storage persistence, and dynamic state management for reading progress."
+  }
+
+  if (imageName.includes("tic")) {
+    return "Classic game built with the JavaScript Module Pattern, featuring game state management, win detection algorithm, and score tracking."
   }
 }
 
@@ -49,6 +44,10 @@ const viewSiteBtnClicked = imageName => {
   if (imageName.includes("todo")) {
     return window.open("https://todo-u63g.onrender.com", "_blank")
   }
+
+  if (imageName.includes("live-music")) {
+    return window.open("https://live-music-app-bm5o.onrender.com/", "_blank")
+  }
 }
 
 const viewCodeBtnClicked = imageName => {
@@ -67,6 +66,10 @@ const viewCodeBtnClicked = imageName => {
   if (imageName.includes("todo")) {
     return window.open("https://github.com/Camus1859/todo")
   }
+
+  if (imageName.includes("live-music")) {
+    return window.open("https://github.com/Camus1859/live-music-app")
+  }
 }
 
 const ProjectsPage = ({ data }) => {
@@ -75,11 +78,11 @@ const ProjectsPage = ({ data }) => {
     return (
       <div
         key={image.node.base}
-        className=" flex-col flex items-center mt-14  text-gray-100 text-center"
+        className="flex-col flex items-center mt-14 text-gray-100 text-center transition-all duration-300 hover:scale-105"
       >
         <p className=" h-5/5	 w-4/5 bg-gray-50 text-gray-900 lg:h-4/5 lg:w-3/5 md:h-5/5	 md:w-4/5 relative">
           {" "}
-          {image.node.base.split(".")[0].toUpperCase()}
+          {image.node.base.split(".")[0].replace(/^\d+-/, "").replace(/-/g, " ").toUpperCase()}
         </p>
 
         <Img
@@ -91,13 +94,13 @@ const ProjectsPage = ({ data }) => {
         </p>
         <div className=" relative flex justify-around h-5/5 lg:h-4/5 lg:w-3/5	 w-4/5 bg-gray-50 md:h-5/5	 md:w-4/5 ">
           <button
-            className=" relative bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none	outline-none	shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-110 m-4 hover:bg-blue-500  "
+            className="relative bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none outline-none shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-105 m-4 hover:bg-blue-500 transition-all duration-300"
             onClick={() => viewSiteBtnClicked(image.node.base)}
           >
             VIEW PROJECT
           </button>
           <button
-            className=" relative m-4	bg-purple-900 p-4 font-bold border-none no-underline	outline-none		rounded-2xl focus:outline-none shadow-2xl transform hover:-translate-y-1 hover:scale-110 hover:bg-purple-500"
+            className="relative m-4 bg-purple-900 p-4 font-bold border-none no-underline outline-none rounded-2xl focus:outline-none shadow-2xl transform hover:-translate-y-1 hover:scale-105 hover:bg-purple-500 transition-all duration-300"
             onClick={() => viewCodeBtnClicked(image.node.base)}
           >
             VIEW CODE

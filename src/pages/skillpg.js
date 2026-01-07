@@ -2,10 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 
 const skills = [
-  { category: "Frontend", items: ["React", "React Native", "Next.js", "Vue.js", "TypeScript"] },
-  { category: "Backend", items: ["Node.js", "GraphQL"] },
-  { category: "Databases", items: ["PostgreSQL", "MongoDB"] },
-  { category: "Cloud", items: ["AWS"] },
+  { category: "Frontend", items: ["React", "React Native", "Next.js", "Vue.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind", "Chrome Extension APIs"] },
+  { category: "Backend", items: ["Node.js", "GraphQL", "REST APIs"] },
+  { category: "Databases", items: ["PostgreSQL", "MongoDB", "SQL"] },
+  { category: "Testing", items: ["Jest", "Cypress", "React Testing Library"] },
+  { category: "Cloud & DevOps", items: ["AWS Lambda", "AWS S3", "AWS CDK", "API Gateway", "CloudWatch", "CI/CD"] },
+  { category: "Tools", items: ["Git", "Zustand", "React Query", "Jira", "Linear", "Confluence", "GitHub CoPilot", "Claude Code"] },
+  { category: "Methodologies", items: ["Agile/Scrum"] },
 ]
 
 const SkillsPage = () => {

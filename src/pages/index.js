@@ -13,7 +13,7 @@ const AboutPage = () => {
                 Anderson Laventure
               </h1>
               <h1 className="text-gray-50 text-2xl lg:font-medium mb-2 inline-block ">
-                Full Stack Developer 
+                Front-End Leaning Full-Stack Developer
               </h1>
             </div>
 
@@ -21,26 +21,29 @@ const AboutPage = () => {
               <div className="border-b-2 border-pink-light  mb-2"></div>
 
               <p className=" text-gray-100 mb-2	text-lg		">
-                Full Stack Developer with 4+ years of experience building scalable
-                web and mobile applications. Former middle school science and math
-                teacher who brings unique problem-solving skills to software development.
-                Experience building React Native mobile apps, Next.js web applications,
-                and full-stack features with TypeScript, Node.js, and GraphQL.
+                Software engineer with 4+ years shipping accessible, WCAG-compliant
+                web, mobile, and browser-extension products end-to-end. Passionate about
+                building user-focused solutions and solving real customer problems.
               </p>
             </div>
             <div className=" mb-2">
               <p className="text-gray-100 lg:w-2/5 text-lg	">
-                Experience working at early stage startups in fintech and edtech,
-                building products with React, Vue.js, PostgreSQL, MongoDB, and AWS.
-                Passionate about clean code and creating user-focused experiences.
+                Experience at fintech and edtech startups building with React,
+                React Native, TypeScript, Node.js, and GraphQL. Background in healthcare
+                operations adds depth to cross-functional collaboration.
               </p>
             </div>
-            <div>
+            <div className="flex flex-wrap gap-4">
               <Link to="/projectspg">
-                <button className="bg-pink-light font-medium	p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-110 		">
+                <button className="bg-pink-light font-medium p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 rounded-lg">
                   SEE MY WORK
                 </button>
               </Link>
+              <a href="/resume.pdf" download>
+                <button className="bg-gray-700 font-medium p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 rounded-lg border border-pink-light">
+                  DOWNLOAD RESUME
+                </button>
+              </a>
             </div>
           </div>
         </div>
