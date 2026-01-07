@@ -22,15 +22,18 @@ const AboutPage = () => {
 
               <p className=" text-gray-100 mb-2	text-lg		">
                 Software engineer with 4+ years shipping accessible, WCAG-compliant
-                web, mobile, and browser-extension products end-to-end. Passionate about
-                building user-focused solutions and solving real customer problems.
+                web, mobile, and browser-extension products end-to-end. Former middle
+                school science teacher who brings that same clarity to every team I
+                work with, breaking down complex problems and building products that
+                actually serve users.
               </p>
             </div>
             <div className=" mb-2">
               <p className="text-gray-100 lg:w-2/5 text-lg	">
-                Experience at fintech and edtech startups building with React,
-                React Native, TypeScript, Node.js, and GraphQL. Background in healthcare
-                operations adds depth to cross-functional collaboration.
+                Track record of high-impact work at fintech and edtech startups using
+                React, Vue.js, React Native, TypeScript, Node, and GraphQL. Background in healthcare operations
+                and education means I think systematically about user needs and
+                communicate clearly across functions.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
