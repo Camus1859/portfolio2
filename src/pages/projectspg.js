@@ -30,12 +30,12 @@ const checkImageAddDescription = imageName => {
 }
 
 const hasLiveSite = imageName => {
-  return !imageName.includes("youtube-rag")
+  return true
 }
 
 const viewSiteBtnClicked = imageName => {
   if (imageName.includes("youtube-rag")) {
-    return // No live site yet
+    return window.open("https://relaxed-llama-ebdc94.netlify.app/", "_blank")
   }
 
   if (imageName.includes("calendar")) {
