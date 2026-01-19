@@ -4,6 +4,10 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const checkImageAddDescription = imageName => {
+  if (imageName.includes("youtube-rag")) {
+    return "Full-stack RAG application orchestrating four APIs (YouTube, OpenAI, Pinecone, Claude) to perform semantic search over video transcripts and deliver AI-powered conversational insights about YouTube creators."
+  }
+
   if (imageName.includes("live-music")) {
     return "Full-stack application integrating three external APIs (Spotify, Ticketmaster, Twilio) to deliver real-time artist data, concert listings, and SMS notifications."
   }
@@ -26,6 +30,10 @@ const checkImageAddDescription = imageName => {
 }
 
 const viewSiteBtnClicked = imageName => {
+  if (imageName.includes("youtube-rag")) {
+    return // No live site yet
+  }
+
   if (imageName.includes("calendar")) {
     return window.open(
       "https://calendar-mntm.onrender.com",
@@ -51,6 +59,10 @@ const viewSiteBtnClicked = imageName => {
 }
 
 const viewCodeBtnClicked = imageName => {
+  if (imageName.includes("youtube-rag")) {
+    return window.open("https://github.com/Camus1859/reddit-rag-project")
+  }
+
   if (imageName.includes("calendar")) {
     return window.open("https://github.com/Camus1859/calendar")
   }

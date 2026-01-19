@@ -33,7 +33,7 @@ const AboutPage = () => {
                 <p className="text-gray-100 text-lg">
                   Track record of high-impact work at fintech and edtech startups using
                   React, Vue.js, React Native, TypeScript, Node, and GraphQL. Increasingly focused on
-                  AI-powered applications and agentic workflows. Background in healthcare operations
+                  AI-powered applications, RAG systems, and agentic workflows. Background in healthcare operations
                   and education means I think systematically about user needs and
                   communicate clearly across functions.
                 </p>
