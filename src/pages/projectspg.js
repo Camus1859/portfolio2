@@ -29,6 +29,10 @@ const checkImageAddDescription = imageName => {
   }
 }
 
+const hasLiveSite = imageName => {
+  return !imageName.includes("youtube-rag")
+}
+
 const viewSiteBtnClicked = imageName => {
   if (imageName.includes("youtube-rag")) {
     return // No live site yet
@@ -106,8 +110,13 @@ const ProjectsPage = ({ data }) => {
         </p>
         <div className=" relative flex justify-around h-5/5 lg:h-4/5 lg:w-3/5	 w-4/5 bg-gray-50 md:h-5/5	 md:w-4/5 ">
           <button
-            className="relative bg-blue-900 p-4 font-bold border-none no-underline focus:outline-none outline-none shadow-2xl rounded-2xl transform hover:-translate-y-1 hover:scale-105 m-4 hover:bg-blue-500 transition-all duration-300"
+            className={`relative p-4 font-bold border-none no-underline focus:outline-none outline-none shadow-2xl rounded-2xl m-4 transition-all duration-300 ${
+              hasLiveSite(image.node.base)
+                ? "bg-blue-900 transform hover:-translate-y-1 hover:scale-105 hover:bg-blue-500 cursor-pointer"
+                : "bg-gray-500 cursor-not-allowed opacity-50"
+            }`}
             onClick={() => viewSiteBtnClicked(image.node.base)}
+            disabled={!hasLiveSite(image.node.base)}
           >
             VIEW PROJECT
           </button>
