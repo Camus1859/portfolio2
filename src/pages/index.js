@@ -25,8 +25,7 @@ const AboutPage = () => {
                   Software engineer with 4+ years shipping accessible, WCAG-compliant
                   web, mobile, and browser-extension products end-to-end. Currently exploring
                   the intersection of AI and user experience, building tools that leverage
-                  LLMs to solve real problems. Former middle school science teacher who brings
-                  that same clarity to every team I work with.
+                  LLMs to solve real problems.
                 </p>
               </div>
               <div className="mb-2">
