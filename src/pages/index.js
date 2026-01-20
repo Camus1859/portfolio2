@@ -43,7 +43,7 @@ const AboutPage = () => {
                     SEE MY WORK
                   </button>
                 </Link>
-                <a href="/resume.pdf" download>
+                <a href="/AndersonLaventure_FrontEnd_FullStack.pdf" download>
                   <button className="bg-gray-700 font-medium p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 rounded-lg border border-pink-light">
                     DOWNLOAD RESUME
                   </button>
@@ -52,7 +52,7 @@ const AboutPage = () => {
             </div>
             <div className="lg:w-1/2 mt-8 lg:mt-0">
               <embed
-                src="/resume.pdf#toolbar=0"
+                src="/AndersonLaventure_FrontEnd_FullStack.pdf#toolbar=0"
                 type="application/pdf"
                 width="100%"
                 height="750px"
