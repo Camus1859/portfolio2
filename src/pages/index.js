@@ -55,7 +55,7 @@ const AboutPage = () => {
                 src="/resume.pdf#toolbar=0"
                 type="application/pdf"
                 width="100%"
-                height="700px"
+                height="750px"
                 className="rounded-lg border border-gray-600"
               />
             </div>
