@@ -2,12 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 
 const skills = [
-  { category: "Frontend", items: ["React", "React Native", "Next.js", "Vue.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind", "Vite", "Chrome Extension APIs"] },
+  { category: "Frontend", items: ["React", "React Native", "Next.js", "Vue.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind", "Chrome Extension APIs"] },
   { category: "Backend", items: ["Node.js", "GraphQL", "REST APIs"] },
   { category: "AI & ML", items: ["RAG Architecture", "Vector Search", "OpenAI Embeddings", "Claude API", "Prompt Engineering"] },
-  { category: "Databases", items: ["PostgreSQL", "MongoDB", "Pinecone", "SQL"] },
+  { category: "Databases", items: ["PostgreSQL", "MongoDB", "Pinecone", "Redis", "SQL"] },
   { category: "Testing", items: ["Jest", "Cypress", "React Testing Library"] },
-  { category: "Cloud & DevOps", items: ["AWS Lambda", "AWS S3", "AWS CDK", "API Gateway", "CloudWatch", "Netlify Functions", "CI/CD"] },
+  { category: "Cloud & DevOps", items: ["AWS Lambda", "AWS S3", "AWS CDK", "API Gateway", "CloudWatch", "Netlify Functions", "Docker", "CI/CD"] },
   { category: "Tools", items: ["Git", "Zustand", "React Query", "Zod", "Jira", "Linear", "Confluence", "GitHub CoPilot", "Claude Code"] },
   { category: "Methodologies", items: ["Agile/Scrum"] },
 ]
