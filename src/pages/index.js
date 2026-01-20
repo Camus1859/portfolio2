@@ -5,7 +5,7 @@ import Link from "gatsby-link"
 const AboutPage = () => {
   return (
     <Layout>
-      <div className="lg:pl-3">
+      <div className="lg:pl-3 h-screen overflow-auto lg:overflow-hidden">
         <div className="mt-12 md:mt-28 lg:ml-44 lg:mr-8">
           <div className="p-4 flex flex-col lg:flex-row lg:gap-12">
             <div className="lg:w-1/2">
@@ -56,7 +56,7 @@ const AboutPage = () => {
                 src="/resume.pdf#toolbar=0"
                 type="application/pdf"
                 width="100%"
-                height="800px"
+                height="700px"
                 className="rounded-lg border border-gray-600"
               />
             </div>

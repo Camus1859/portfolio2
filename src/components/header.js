@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <MyComponent />
 
-      <header className=" hidden md:block md:pt-6  md:w-full md:fixed ">
+      <header className="hidden md:block md:pt-6 md:w-full md:fixed z-50">
         <nav>
           <ul className="flex flex-row justify-evenly">
             <li>
