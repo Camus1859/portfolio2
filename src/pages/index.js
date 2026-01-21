@@ -14,7 +14,7 @@ const AboutPage = () => {
                   Anderson Laventure
                 </h1>
                 <h1 className="text-gray-50 text-2xl lg:font-medium mb-2 inline-block">
-                  Front-End Leaning Full-Stack Developer
+                  Full-Stack Developer
                 </h1>
               </div>
 
@@ -22,19 +22,21 @@ const AboutPage = () => {
                 <div className="border-b-2 border-pink-light mb-2"></div>
 
                 <p className="text-gray-100 mb-2 text-lg">
-                  Software engineer with 4+ years shipping accessible, WCAG-compliant
-                  web, mobile, and browser-extension products end-to-end. Currently exploring
-                  the intersection of AI and user experience, building tools that leverage
-                  LLMs to solve real problems.
+                  Software engineer with 4+ years shipping accessible,
+                  WCAG-compliant web, mobile, and browser-extension products
+                  end-to-end. Currently exploring the intersection of AI and
+                  user experience, building tools that leverage LLMs to solve
+                  real problems.
                 </p>
               </div>
               <div className="mb-2">
                 <p className="text-gray-100 text-lg">
-                  Track record of high-impact work at fintech and edtech startups using
-                  React, Vue.js, React Native, TypeScript, Node, and GraphQL. Increasingly focused on
-                  AI-powered applications, RAG systems, and agentic workflows. Background in healthcare operations
-                  and education means I think systematically about user needs and
-                  communicate clearly across functions.
+                  Track record of high-impact work at fintech and edtech
+                  startups using React, Vue.js, React Native, TypeScript, Node,
+                  and GraphQL. Increasingly focused on AI-powered applications,
+                  RAG systems, and agentic workflows. Background in healthcare
+                  operations and education means I think systematically about
+                  user needs and communicate clearly across functions.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
@@ -43,7 +45,10 @@ const AboutPage = () => {
                     SEE MY WORK
                   </button>
                 </Link>
-                <a href="/AndersonLaventure_FrontEnd_FullStack_ENG.pdf" download>
+                <a
+                  href="/AndersonLaventure_FrontEnd_FullStack_ENG.pdf"
+                  download
+                >
                   <button className="bg-gray-700 font-medium p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 rounded-lg border border-pink-light">
                     DOWNLOAD RESUME
                   </button>
