@@ -45,14 +45,6 @@ const AboutPage = () => {
                     SEE MY WORK
                   </button>
                 </Link>
-                <a
-                  href="/AndersonLaventure_FrontEnd_FullStack_ENG.pdf"
-                  download
-                >
-                  <button className="bg-gray-700 font-medium p-4 text-gray-100 focus:outline-none transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 rounded-lg border border-pink-light">
-                    DOWNLOAD RESUME
-                  </button>
-                </a>
               </div>
             </div>
             <div className="lg:w-1/2 mt-8 lg:mt-0">
