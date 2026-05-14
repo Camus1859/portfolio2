@@ -22,11 +22,16 @@ const AboutPage = () => {
                 <div className="border-b-2 border-pink-light mb-2"></div>
 
                 <p className="text-gray-100 mb-2 text-lg">
-                  Software engineer with 4+ years shipping accessible,
-                  WCAG-compliant web, mobile, and browser-extension products
-                  end-to-end. Currently exploring the intersection of AI and
-                  user experience, building tools that leverage LLMs to solve
-                  real problems.
+                  Full-stack software engineer with 4+ years shipping production
+                  web applications end-to-end at fintech and edtech startups.
+                  Strong foundation in JavaScript, TypeScript, Node, React, and
+                  GraphQL, with current focus on building AI-powered systems
+                  including RAG pipelines and agentic workflows. Track record of
+                  high-impact work on cross-functional teams, owning features
+                  from design through CI/CD, automated testing, and deployment.
+                  Background in education and healthcare operations means I
+                  think systematically about user needs and communicate clearly
+                  with both technical and non-technical stakeholders.
                 </p>
               </div>
               <div className="mb-2">
