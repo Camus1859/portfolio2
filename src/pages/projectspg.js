@@ -13,7 +13,7 @@ const checkImageAddDescription = imageName => {
   }
 
   if (imageName.includes("calendar")) {
-    return "Full-stack calendar featuring a custom date-calculation algorithm built from scratch, MongoDB persistence, and third-party API integration for US national holidays."
+    return "Full-stack calendar featuring a custom date-calculation algorithm built from scratch, OOP, MongoDB persistence, and third-party API integration for US national holidays."
   }
 
   if (imageName.includes("todo")) {
